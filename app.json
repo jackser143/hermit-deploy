@@ -1,19 +1,19 @@
 {
-  "name": "whatsapp-bot (hermit-md)",
+  "name": "bl roshan yt(roshan-sir)",
   "description": " Whatsapp bot.",
   "keywords": [
-    "whatsapp bot"
+    "roshan-sir-wa-vot"
   ],
-  "repository": "https://github.com/A-d-i-t-h-y-a-n/hermit-md",
+  "repository": "https://github.com/roshanyt6/hermit-deploy",
   "stack": "container",
   "env": {
     "SESSION_ID": {
-      "description": "session id",
+      "description": "whatsapp scan akkiyapole kittiya session🖐🏻🌚",
       "required": false,
       "value": ""
     },
     "SUDO": {
-      "description": "admin",
+      "description": "admin phone number 91xxxxxxxxx",
       "required": true,
       "value": "null"
     },
@@ -23,20 +23,20 @@
       "value": "public"
     },
     "ALWAYS_ONLINE": {
-      "description": "show bot number last seen as online",
+      "description": "show bot number online for 24/7😮‍💨💖",
       "required": false,
       "value": "false"
     },
     "HEROKU_APP_NAME": {
-      "description": "Heroku app name, same as above entered",
+      "description": "Heroku app name 👀",
       "required": true
     },
     "HEROKU_API_KEY": {
-      "description": "Heroku account api key, https://dashboard.heroku.com/account",
+      "description": "Heroku account api key paste ceyy💖🖐🏻, https://dashboard.heroku.com/account",
       "required": true
     },
     "LOG_MSG": {
-      "description": "Show whatsapp msgs in log",
+      "description": "Show whatsapp msgs in log🖐🏻",
       "required": false,
       "value": "false"
     },
@@ -46,12 +46,12 @@
       "value": "."
     },
     "BOT_INFO": {
-      "description": "botname;ownername;ownernumber;image url",
+      "description": "menu work alla myr😮‍💨",
       "required": true,
       "value": "𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;972528277755;https://i.imgur.com/6oRG106.jpeg"
     },
     "STICKER_DATA": {
-      "description": "sticker package name",
+      "description": "sticker name kodekkd",
       "required": false,
       "value": "𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮"
     },
