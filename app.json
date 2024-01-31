@@ -1,6 +1,7 @@
 {
   "name": "bl roshan yt(roshan-sir)",
   "description": " Whatsapp bot.",
+  "logo":https://i.imgur.com/4iAODFB.jpg
   "keywords": [
     "roshan-sir-wa-vot"
   ],
@@ -26,14 +27,7 @@
       "description": "show bot number online for 24/7😮‍💨💖",
       "required": false,
       "value": "false"
-    },
-    "HEROKU_APP_NAME": {
-      "description": "Heroku app name 👀",
-      "required": false 
-    },
-    "HEROKU_API_KEY": {
-      "description": "api koduthitte karayam ella setvar work avella myr🥲, so u can add the key in confvar",
-      "required": false 
+    
     },
     "LOG_MSG": {
       "description": "Show whatsapp msgs in log🖐🏻",
