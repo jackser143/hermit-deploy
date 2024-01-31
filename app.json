@@ -32,7 +32,7 @@
       "required": true
     },
     "HEROKU_API_KEY": {
-      "description": "Heroku account api key paste ceyy💖🖐🏻, https://dashboard.heroku.com/account",
+      "description": "api koduthitte karayam ella setvar work avella myr🥲, so u can add the key in confvar",
       "required": true
     },
     "LOG_MSG": {
