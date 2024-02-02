@@ -1,67 +1,107 @@
 {
-  "name": "bl roshan yt(roshan-sir)",
-  "description": " Whatsapp bot.",
-  "keywords": [
-    "roshan-sir-wa-vot"
-  ],
-  "repository": "https://github.com/roshanyt6/hermit-deploy",
-  "stack": "container",
-  "env": {
-    "SESSION_ID": {
-      "description": "whatsapp scan akkiyapole kittiya session🖐🏻🌚",
-      "required": false,
-      "value": ""
+    "name": "kiran xer wabot",
+    "description": "WhatsApp public/user bot",
+    "logo": "https://i.imgur.com/4iAODFB.jpg",
+    "keywords": ["WhatsApp"],
+    "repository": "https://github.com/roshanyt6/hermit-deploy",
+    "stack": "container",
+    "env": {
+        "HANDLERS": {
+            "description": "Prefix of commands. Can be also false",
+            "required": true,
+            "value":".,"
+        },
+        "MULTI_HANDLERS": {
+            "description": "Use prefix as given handlers and also without handlers",
+            "required": true,
+            "value":"false"
+        },
+        "READ_MESSAGES": {
+            "description": "Bot will read all messages. Can be also false",
+            "required": true,
+            "value":"false"
+        },
+        "READ_COMMAND": {
+            "description": "Bot will read all commands (blue tick). Can be also false",
+            "required": true,
+            "value":"true"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Exact name which you gave at the top",
+            "required": true,
+            "value":"setvar cmd onnum wrk avilla myre 😹👨🏻‍🦯"
+        },
+        "STICKER_DATA": {
+            "description": "Name of stickers created using bot. Can also split using ;",
+            "required": true,
+            "value":"Raganork pack;Author name"
+        },
+        "CHATBOT": {
+            "description": "AI chatbot",
+            "required": true,
+            "value":"off"
+        },
+        "BOT_NAME": {
+            "description": "Name of AI chatbot",
+            "required": true,
+            "value":"Raganork"
+        },
+        "AUDIO_DATA": {
+            "description": "Name of audio (take) name;name;image(url)",
+            "required": true,
+            "value":"Raganork;Souravkl11;https://i.imgur.com/YchATyT.jpeg"
+        },
+        "MODE": {
+            "description": "Private or public",
+            "required": true,
+            "value":"public"
+        },
+        "SUDO": {
+            "description": "These numbers can control your bot. seperate with commas",
+            "required": false,
+            "value":"919539060020"
+        },
+        "BLOCK_CHAT": {
+            "description": "Block bot in specific groups, enter jids here sepereated with commas",
+            "required": false,
+            "value":""
+        },
+        "REJECT_CALLS": {
+            "description": "Auto reject calls, true/false",
+            "required": false,
+            "value":"false"
+        },
+        "ALLOWED": {
+            "description": "Country codes allowed by antifake",
+            "required": false,
+            "value":"91,48"
+        },
+        "WARN": {
+            "description": "Warn limit",
+            "required": false,
+            "value":"3"
+        },
+        "LANGUAGE": {
+            "description": "Available languages: english,manglish,turkish",
+            "required": false,
+            "value":"english"
+        },
+        "AUTO_READ_STATUS": {
+            "description": "View status updates automatically",
+            "required": false,
+            "value":"true"
+        },
+        "ALIVE": {
+            "description": "Alive message, customize your alive msg by looking wiki",
+            "required": false,
+            "value":"_Bot is alive since {uptime}_"
+        },
+       "SESSION": {
+            "description": "Your session code, obtained by scanning QR",
+            "required": true         
+        }
     },
-    "SUDO": {
-      "description": "admin phone number 91xxxxxxxxx",
-      "required": true,
-      "value": "null"
-    },
-    "MODE": {
-      "description": "mode",
-      "required": true,
-      "value": "public"
-    },
-    "ALWAYS_ONLINE": {
-      "description": "show bot number online for 24/7😮‍💨💖",
-      "required": false,
-      "value": "false"
-    
-    },
-    "LOG_MSG": {
-      "description": "Show whatsapp msgs in log🖐🏻",
-      "required": false,
-      "value": "false"
-    },
-    "PREFIX": {
-      "description": "prefix for bot. all so can be null or false multi prefix",
-      "required": true,
-      "value": "."
-    },
-    "BOT_INFO": {
-      "description": "menu/setvar work avilla myr",
-      "required": true,
-      "value": "𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;972528277755;https://i.imgur.com/6oRG106.jpeg"
-    },
-    "STICKER_DATA": {
-      "description": " your sticker name ",
-      "required": false,
-      "value": "𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮"
-    },
-    "AUDIO_DATA": {
-      "description": "audio package name",
-      "required": false,
-      "value": "𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;https://i.imgur.com/6oRG106.jpeg"
-    },
-    "READ_COMMAND": {
-      "description": "Read all commands",
-      "required": false,
-      "value": "false"
-    }
-  },
-  "addons": [
-    {
+    "addons": [{
       "plan": "heroku-postgresql"
-    }
-  ]
+        }]
 }
