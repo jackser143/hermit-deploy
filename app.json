@@ -1,107 +1,98 @@
 {
-    "name": "kiran xer wabot",
-    "description": "WhatsApp public/user bot",
-    "logo": "https://i.imgur.com/4iAODFB.jpg",
+    "name": "Thanthonnikl",
+    "description": "repo/bl roshan",
+    "logo":  "https://i.imgur.com/OnFt7Gi.jpeg",
     "keywords": ["WhatsApp"],
     "repository": "https://github.com/roshanyt6/hermit-deploy",
     "stack": "container",
-    "env": {
-        "HANDLERS": {
-            "description": "Prefix of commands. Can be also false",
-            "required": true,
-            "value":".,"
-        },
-        "MULTI_HANDLERS": {
-            "description": "Use prefix as given handlers and also without handlers",
-            "required": true,
-            "value":"false"
-        },
-        "READ_MESSAGES": {
-            "description": "Bot will read all messages. Can be also false",
-            "required": true,
-            "value":"false"
-        },
-        "READ_COMMAND": {
-            "description": "Bot will read all commands (blue tick). Can be also false",
-            "required": true,
-            "value":"true"
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Exact name which you gave at the top",
-            "required": true,
-            "value":"setvar cmd onnum wrk avilla myre 😹👨🏻‍🦯"
-        },
-        "STICKER_DATA": {
-            "description": "Name of stickers created using bot. Can also split using ;",
-            "required": true,
-            "value":"stickernsme"
-        },
-        "CHATBOT": {
-            "description": "AI chatbot",
-            "required": true,
-            "value":"off"
-        },
-        "BOT_NAME": {
-            "description": "Name of AI chatbot",
-            "required": true,
-            "value":"hermit-md"
-        },
-        "AUDIO_DATA": {
-            "description": "Name of audio (take) name;name;image(url)",
-            "required": true,
-            "value":"name;about;imageurl"
-        },
-        "MODE": {
-            "description": "Private or public",
-            "required": true,
-            "value":"public"
-        },
-        "SUDO": {
-            "description": "These numbers can control your bot. seperate with commas",
-            "required": false,
-            "value":"91xxxxxxxxxx"
-        },
-        "BLOCK_CHAT": {
-            "description": "Block bot in specific groups, enter jids here sepereated with commas",
-            "required": false,
-            "value":""
-        },
-        "REJECT_CALLS": {
-            "description": "Auto reject calls, true/false",
-            "required": false,
-            "value":"false"
-        },
-        "ALLOWED": {
-            "description": "Country codes allowed by antifake",
-            "required": false,
-            "value":"91,48"
-        },
-        "WARN": {
-            "description": "Warn limit",
-            "required": false,
-            "value":"3"
-        },
-        "LANGUAGE": {
-            "description": "Available languages: english,manglish,turkish",
-            "required": false,
-            "value":"english"
-        },
-        "AUTO_READ_STATUS": {
-            "description": "View status updates automatically",
-            "required": false,
-            "value":"true"
-        },
-        "ALIVE": {
-            "description": "Alive message, customize your alive msg by looking wiki",
-            "required": false,
-            "value":"_Bot is alive since {uptime}_"
-        },
-       "SESSION": {
-            "description": "Your session code, obtained by scanning QR",
-            "required": true         
-        }
+  "env": {
+    "SESSION_ID": {
+      "description": "session id",
+      "required": true,
+      "value": ""
     },
-    "addons": [{
+    "SUDO": {
+      "description": "owner number of the bot",
+      "required": true,
+      "value": "91xxxxxxxxxx"
+    },
+    "MODE": {
+      "description": "mode public or private",
+      "required": true,
+      "value": "private"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "show bot number last seen as online🤍🌚",
+      "required": false,
+      "value": "false"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name, same as above entered",
+      "required": true
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku account api key, https://dashboard.heroku.com/account",
+      "required": true
+    },
+    "LOG_MSG": {
+      "description": "Show whatsapp msgs in log",
+      "required": false,
+      "value": "false"
+    },
+    "PREFIX": {
+      "description": "prefix for bot. all so can be null or false multi prefix",
+      "required": true,
+      "value": "."
+    },
+    "BOT_INFO": {
+      "description": "botname;ownername;ownernumber;image url",
+      "required": true,
+      "value": "ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ;919539060020;https://i.imgur.com/pbNNWfM.jpeg"
+    },
+    "STICKER_DATA": {
+      "description": "sticker package name",
+      "required": true,
+      "value": "ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ"
+    },
+    "AUDIO_DATA": {
+      "description": "audio package name",
+      "required": true,
+      "value": "ʜᴇʀᴍɪᴛ;ᴀᴅɪᴛʜyᴀɴ;https://i.imgur.com/pbNNWfM.jpeg"
+    },
+    "READ_MSG": {
+      "description": "Read all messages",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_STATUS_VIEW": {
+      "description": "automatic read status",
+      "required": false,
+      "value": "false"
+    },
+    "REJECT_CALL": {
+      "description": "automatic reject call",
+      "required": false,
+      "value": "false"
+    },
+    "WARN": {
+      "description": "warn count",
+      "required": false,
+      "value": "4"
+    },
+    "SONG_THUMBNAIL": {
+      "description": "show youtube video thumbnail in song cmd",
+      "required": false,
+      "value": "false"
+    },
+    "ERROR_MESSAGE": {
+      "description": "get error alert",
+      "required": false,
+      "value": "true"
+    }
+  },
+  "addons": [
+    {
       "plan": "heroku-postgresql"
-        }]
+    }
+  ]
 }
